@@ -10,4 +10,46 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("work1", "onStart方法被执行");
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("work1", "onResume方法被执行");
+
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("work1", "onPause方法被执行");
+
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("work1", "onStop方法被执行");
+
+    }
+
+
+
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("work1", "onRestart方法被执行");
+
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("work1", "onDestroy方法被执行");
+
+    }
+
+
 }
